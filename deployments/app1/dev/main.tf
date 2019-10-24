@@ -1,7 +1,7 @@
 resource "google_compute_instance" "backend" {
   name         = "my-frontend-instance"
   machine_type = "n1-standard-1"
-  zone         = "us-west1-a"
+  zone         = "us-west1-b"
   project      = "${var.app_project}"
 
   tags = ["backend"]
